@@ -208,8 +208,8 @@ public class DbMaker
 			raf.write(indexBlock.getBytes());
 		}
 		
-		//record the end block
-		if ( counter > 0 ) {
+		//record the end block 此处应该改为1
+		if ( counter > 1 ) {
 			indexBlock = indexPool.getLast();
 			hb = new HeaderBlock(
 				indexBlock.getStartIp(),
